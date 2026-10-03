@@ -56,27 +56,27 @@ API pública Open-Meteo (https://api.open-meteo.com/v1/forecast): Consulta hist�
 ### Resultados Obtenidos
 
 Modelo Baseline (Regresión Logística):** \~73.68% de precisión en test.
-Red Neuronal MLP (Keras):** \~84.21% de precisión en test.
+*Red Neuronal MLP (Keras):** \~84.21% de precisión en test.
 
 La red neuronal superó al modelo baseline, demostrando mejor capacidad para capturar relaciones no lineales entre las variables climáticas.
 
 ### Cómo reproducirlo y Pruebas
 
 ```
-# 1. Ampliar y preparar el dataset
+1. Ampliar y preparar el dataset
 python semana04/ampliar_dataset.py
 python semana04/preparar_dataset.py
 
-# 2. Probar modelo sintético
+ 2. Probar modelo sintético
 python semana04/perceptron_sintetico.py
 
-# 3. Entrenar y evaluar el clasificador de lluvia
+3. Entrenar y evaluar el clasificador de lluvia
 python semana04/clasificador_lluvia.py
 
-# 4. Inferencia con el modelo entrenado
+4. Inferencia con el modelo entrenado
 python semana04/predecir.py
 
-# 5. Ejecución de pruebas unitarias
+5. Ejecución de pruebas unitarias
 python -m pytest semana04/tests/ -v
 
 ```
@@ -84,3 +84,5 @@ python -m pytest semana04/tests/ -v
 ```
 
 ```
+Evidencia de Pruebas Automatizadas !
+[Pruebas Pytest PASSED](evidencia\_pytest.png)
